@@ -1,0 +1,49 @@
+name: Essentials
+version: 5.2
+api-version: 1.13
+author: EinKaktus
+main: de.kaktus.main.Main
+commands:
+  gamemode:
+    aliases: [gm]
+  giveall:
+  rtp:
+  fly:
+  heal:
+  tp:
+  tphere:
+  tpa:
+  tpaccept:
+  vanish:
+    aliases: [v]
+  msg:
+  reply:
+    aliases: [r]
+  clearchat:
+    aliases: [cc]
+  day:
+  noon:
+  night:
+  midnight:
+  spawn:
+  setspawn:
+  farm:
+  invsee:
+  eco:
+  money:
+  pay:
+  weather:
+  help:
+  sethome:
+  home:
+  kopf:
+  killall:
+  rang:
+  broadcast:
+    aliases: [bc]
+  important:
+  sun:
+  storm:
+  stop:
+  bank:
+  system:
