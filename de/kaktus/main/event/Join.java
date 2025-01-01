@@ -73,34 +73,6 @@ public class Join implements Listener {
         }
     }
 
-    @EventHandler
-    public void joinFile(PlayerJoinEvent e){
-        Player p = e.getPlayer();
-
-        UUID uuid = p.getUniqueId();
-        Location location = p.getLocation();
-        String ipAddress = p.getAddress().getAddress().getHostAddress();
-        String name = p.getName();
-
-        File file = new File("plugins/System/players/", uuid + ".yml");
-        try {
-            if (!file.exists()){
-                boolean newFile = file.createNewFile();
-                if (newFile){
-                    FileWriter fileWriter = new FileWriter(file);
-                    fileWriter.write("Player UUID: " + uuid + "\n");
-                    fileWriter.write("Player Join Location: " + location.getWorld().getName() + ", "
-                            + location.getX() + ", " + location.getY() + ", " + location.getZ() + "\n");
-                    fileWriter.write("Player IP Address: " + ipAddress + "\n");
-                    fileWriter.write("Player Name: " + name);
-                    fileWriter.close();
-                }
-            }
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-
-    }
 
     @EventHandler
     public void TPSpawn(PlayerJoinEvent e){
